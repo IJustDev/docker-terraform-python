@@ -10,4 +10,4 @@ RUN curl https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform
 
 RUN pip install awscli boto3
 
-ENTRYPOINT ["terraform"]
+ENTRYPOINT ["/bin/bash"]
